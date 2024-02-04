@@ -1,7 +1,19 @@
 // components/Map.tsx
 import React, { useEffect, useRef } from 'react';
 
-const Map = ({ centerCoordinates, defaultQueries, searchRadius }) => {
+interface LatLngLiteral {
+    lat: number;
+    lng: number;
+  }
+  
+  interface MapProps {
+    centerCoordinates: LatLngLiteral;
+    defaultQueries: string[];
+    searchRadius: str;
+  }
+
+
+  const Map: React.FC<MapProps> = ({ centerCoordinates, defaultQueries, searchRadius }) => {
     const mapRef = useRef(null);
     const searchBoxRef = useRef(null);
     const locationInfoRef = useRef(null);
