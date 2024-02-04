@@ -5,7 +5,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, clone this repo:
 
 ```bash
-git clone 
+git clone https://github.com/vnthanhdng/black-wings-hacks-2024.git
 
 ```
 Install necessary packages:
