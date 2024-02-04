@@ -81,7 +81,7 @@ const Makeup = () => {
           </div>
 
           <h2 className="text-2xl font-bold my-4">Items to Buy</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4">
             {makeupProductRecommendations.map((product, index) => (
               <a key={index} href={product.productUrl} target="_blank" className="block bg-white shadow-md rounded-md overflow-hidden">
                 <img className="w-full h-48 object-cover" src={product.imageUrl} alt={product.title} />
