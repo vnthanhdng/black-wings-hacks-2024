@@ -21,6 +21,10 @@ html{
   padding-top: 4.5rem;
 }
 
+.nav-link:hover {
+  background-color: sandybrown;
+  color: black;
+}
 
 .search-box input {
   @apply border-2 border-gray-300 p-2;
@@ -78,6 +82,11 @@ cursor: pointer;
 .interactive-data-display,
 .problem-solution-animation {
   
+}
+
+.category-header{
+  color: white;
+
 }
 
 .subsection {

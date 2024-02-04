@@ -47,7 +47,7 @@ const Hygiene = () => {
 
       <div className="bg-no-repeat bg-cover" style={{ backgroundImage: "url('https://static.basicinvite.com/media/bi/33858/floral-medallion-wallpaper-l-brown.jpg?q=1698170417')" }}>
         <div className="container mx-auto p-8">
-          <h2 className="text-2xl font-bold mb-4">Hygiene</h2>
+          <h2 className="text-3xl font-bold mb-4 category-header">Hygiene</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {resourceCardsData.map((card, index) => (
               <ResourcesCard key={index} {...card} />
