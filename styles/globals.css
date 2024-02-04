@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Josefin+Sans:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+  @apply font-garamond
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Alegreya Sans SC', sans-serif;
+  font-family: 'EB Garamond', serif;
+  font-family: 'Merriweather', serif; */
+}
+
+.body-padding {
+  padding-top: 4.5rem;
+}
+
+
+.search-box input {
+  @apply border-2 border-gray-300 p-2;
+}
+
+.search-box button {
+  @apply bg-stone-900 text-white p-2 ml-2;
+}
+
+
+.location-info {
+  background: #fff;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  max-width: 300px; /* Adjust width as needed */
+}
+
+.map {
+  height: 400px;
+  width: 100%;
+}
+
+.hero-section {
+  height: 100vh;
+  color: #fff;
+  text-align: center;
+  padding-top: 100px;
+}
+button{
+background-color: #f2f2f2;
+color: #333;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.about-us,
+.our-mission
+{
+  padding: 50px 20px;
+  text-align: center;
+  color: saddlebrown;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.subsections-intro {
+  padding: 50px 20px;
+  text-align: center;
+  color: #fff;
+
+}
+
+.interactive-data-display,
+.problem-solution-animation {
+  
+}
+
+.subsection {
+  margin: 20px;
+  padding: 20px;
+  background: #f4f4f4;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  color: saddlebrown
+}
+
+.subsection:hover {
+  transform: translateY(-5px);
+}
+
+/* Add styles for navbar links */
+.nav-link {
+  @apply text-white text-center px-4 py-2 no-underline text-lg;
+}
+
+/* Add styles for active navbar link */
+.nav-link-active {
+  @apply bg-yellow-950;
+}
+
+/* Add styles for navbar */
+.navbar {
+  @apply bg-black w-full sticky top-0 z-10;
+}
+
+/* Ensure images in the navbar are vertically aligned */
+.nav-logo {
+  @apply inline-block ;
+}
+
+/* START: General styles */
+.max-width {
+  @apply max-w-[960px] mx-auto;
+}
+
+.padding-x {
+  @apply sm:px-16 px-6;
+}
+
+.padding-y {
+  @apply py-4;
+}
+
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
+.flex-between {
+  @apply flex justify-between items-center;
+}
+
+/* .custom-btn {
+  @apply flex flex-row relative justify-center items-center py-3 px-6 outline-none;
+} */
+/* END: General styles */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* High z-index to ensure it's above other content */
+}
+
+.header {
+  @apply flex flex-col gap-5 relative z-0 max-w-[1440px] mx-auto min-h-screen;
+}
+
+.header__title {
+  @apply 2xl:text-[72px] sm:text-[64px] text-[50px] font-extrabold font-merriweather;
+}
+
+.header__subtitle {
+  @apply text-[27px] font-light mt-5;
+}
+
+.section {
+  @apply flex flex-col gap-5 relative z-0 max-w-[1440x] mx-auto;
+}
+
+.section__title {
+  @apply xl:text-[27px] sm:text-[24px] text-[20px] font-extrabold font-merriweather;
+}
+
+.section__text {
+  @apply text-[20px] font-light mt-5;
+}
+
+/* About page specific styles */
+.about-title {
+  @apply text-3xl font-bold text-gray-900;
+}
+
+.about-text {
+  @apply mt-4 text-lg text-gray-600;
+}
+
+.about-heading {
+  @apply mt-12 text-3xl font-bold text-gray-900;
+}
+
