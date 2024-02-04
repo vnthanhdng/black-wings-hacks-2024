@@ -14,7 +14,7 @@ Install necessary packages:
 npm install
 
 ```
-Create a .env.local file and provide your Google Map API
+Create a .env.local file at the root of your directory and provide your Google Maps API
 ```bash
 NEXT_PUBLIC_GOOGLE_MAPS_API_KEY='YOUR_KEY'
 
